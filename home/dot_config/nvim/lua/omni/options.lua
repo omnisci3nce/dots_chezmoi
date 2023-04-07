@@ -3,8 +3,8 @@ vim.opt.termguicolors = true
 vim.opt.number = true           -- turn on line numbers
 vim.opt.relativenumber = true
 
-vim.opt.expandtab = true	      -- tabs -> spaces
-vim.opt.tabstop = 2		          -- tab counts for 2 cols
+vim.opt.expandtab = true        -- tabs -> spaces
+vim.opt.tabstop = 2             -- tab counts for 2 cols
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.smartindent = true
