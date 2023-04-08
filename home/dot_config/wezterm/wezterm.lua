@@ -16,4 +16,6 @@ config.window_padding = {
 
 --  font = wezterm.font('MesloLGM Nerd Font Mono'),
 
+config.color_scheme = "Tomorrow Night Bright"
+
 return config
