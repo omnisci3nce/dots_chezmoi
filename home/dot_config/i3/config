@@ -208,7 +208,7 @@ bar {
         #status_command i3status
 	status_command bumblebee-status \
 		-t iceberg-contrast \
-		-m memory spacer disk spacer datetime \
+		-m cpu spacer memory spacer disk spacer datetime \
 		-p memory.format="{used}/{total}" disk.format="{used}/{size}"
 	# font pango:MesloLGM Nerd Font Mono 11
 	colors {
