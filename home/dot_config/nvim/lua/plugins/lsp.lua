@@ -24,6 +24,7 @@ return {
 
     -- my modifications
     lsp.ensure_installed({
+--      'clangd',
 --      'tsserver',
 --      'rust_analyzer',
 --      'lua_ls',
