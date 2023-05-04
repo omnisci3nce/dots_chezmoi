@@ -13,5 +13,7 @@ return {
   'rebelot/kanagawa.nvim',
   'EdenEast/nightfox.nvim',
   'AlexvZyl/nordic.nvim',
-  'kabouzeid/nvim-jellybeans'
+  'kabouzeid/nvim-jellybeans',
+  'RRethy/nvim-base16',
+  'Shatur/neovim-ayu',
 }

@@ -1,4 +1,5 @@
 {
+  "Comment.nvim": { "branch": "master", "commit": "e1fe53117aab24c378d5e6deaad786789c360123" },
   "LuaSnip": { "branch": "master", "commit": "a6355b12a3b7da0aef71f02560e17ff480182b97" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef" },
@@ -14,9 +15,11 @@
   "melange-nvim": { "branch": "master", "commit": "f15922543dd70b360335effb61411c05c710b99c" },
   "neoconf.nvim": { "branch": "main", "commit": "71b7aebca0f28a576c2f4fe69ed58755c7b4b737" },
   "neodev.nvim": { "branch": "main", "commit": "ac2747fa98cd19ccfbf70df1503ad80a812f0bfd" },
+  "neovim-ayu": { "branch": "master", "commit": "762ff24bd429fbb1c1e20b13043b4c8f0266bcf1" },
   "nightfox.nvim": { "branch": "main", "commit": "669b0ce7d02d511c06ceae6201392dc29906dfc0" },
   "nordic.nvim": { "branch": "main", "commit": "fc7ea160bb441f9c0245c2719a3c7b8c22468178" },
   "nvim": { "branch": "main", "commit": "fa9a4465672fa81c06b23634c0f04f6a5d622211" },
+  "nvim-base16": { "branch": "master", "commit": "18ce3c5f694aaac31f5a434937ca6abe02b83f92" },
   "nvim-cmp": { "branch": "main", "commit": "777450fd0ae289463a14481673e26246b5e38bf2" },
   "nvim-jellybeans": { "branch": "main", "commit": "6401334926b7b352594324f4e20f2162f2998a54" },
   "nvim-lspconfig": { "branch": "master", "commit": "eddaef928c1e1dd79a96f5db45f2fd7f2efe7ea0" },

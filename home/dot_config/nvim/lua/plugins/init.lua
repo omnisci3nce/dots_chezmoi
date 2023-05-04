@@ -13,13 +13,19 @@ return {
   },
   'tpope/vim-fugitive',
   {
-  "nvim-tree/nvim-tree.lua",
-  version = "*",
-  dependencies = {
-    "nvim-tree/nvim-web-devicons",
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end,
   },
-  config = function()
-    require("nvim-tree").setup {}
-  end,
-}
+  {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
 }

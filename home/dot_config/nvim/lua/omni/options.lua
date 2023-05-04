@@ -24,4 +24,4 @@ vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
 
 -- without this rust always gets 4 spaces
-vim.g.rust_recommended_style = 0
+vim.g.rust_recommended_style = 1
