@@ -16,4 +16,6 @@ return {
   'kabouzeid/nvim-jellybeans',
   'RRethy/nvim-base16',
   'Shatur/neovim-ayu',
+  'jaredgorski/SpaceCamp',
+  'lunacookies/vim-substrata',
 }
