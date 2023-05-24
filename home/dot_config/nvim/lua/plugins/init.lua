@@ -27,5 +27,11 @@ return {
     config = function()
       require('Comment').setup()
     end
+  },
+  {
+    'j-hui/fidget.nvim',
+    config = function()
+      require('fidget').setup()
+    end
   }
 }

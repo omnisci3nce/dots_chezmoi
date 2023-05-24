@@ -25,3 +25,9 @@ vim.opt.colorcolumn = "80"
 
 -- without this rust always gets 4 spaces
 vim.g.rust_recommended_style = 1
+
+-- Folding
+vim.opt.foldmethod = "expr" -- fold based on express (as opposed to 'indent' for example)
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- use treesitter for choosing folds
+vim.opt.foldenable = false -- don't fold everything by defaut when opening file
+vim.opt.foldlevel = 9

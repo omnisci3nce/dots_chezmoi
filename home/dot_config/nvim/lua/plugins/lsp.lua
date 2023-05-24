@@ -24,9 +24,8 @@ return {
 
     -- my modifications
     lsp.ensure_installed({
---      'clangd',
 --      'tsserver',
---      'rust_analyzer',
+      'rust_analyzer',
 --      'lua_ls',
 --      'elixirls'
     })
@@ -43,12 +42,16 @@ return {
     lsp.on_attach(function(client, bufnr)
       local bufopts = { noremap=true, silent=true, buffer=bufnr }
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
+      vim.keymap.set("n", "gD", vim.lsp.buf.implementation, bufopts)
+      vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
+      vim.keymap.set("n", "ga", vim.lsp.buf.code_action, bufopts)
     end)
 
     lsp.set_preferences({
       sign_icons = {}
     })
-
+    
     lsp.setup()
+
   end
 }
