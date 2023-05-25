@@ -13,3 +13,6 @@ vim.keymap.set("n", "Q", "<nop>")
 -- buffer movement
 vim.keymap.set("n", "<leader>h", ":bp<CR>")
 vim.keymap.set("n", "<leader>l", ":bn<CR>")
+
+-- toggle nvim tree
+vim.keymap.set("n", "<leader><tab>", ":NvimTreeToggle<CR>")
