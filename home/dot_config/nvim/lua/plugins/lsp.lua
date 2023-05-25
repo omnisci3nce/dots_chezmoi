@@ -25,10 +25,13 @@ return {
     -- my modifications
     lsp.ensure_installed({
 --      'tsserver',
-      'rust_analyzer',
+--      'rust_analyzer',
 --      'lua_ls',
---      'elixirls'
+--      'elixirls',
+--      'ocamllsp',
+--      'zls'
     })
+
 
     local cmp = require('cmp')
     local cmp_config = lsp.defaults.cmp_config({
@@ -41,17 +44,23 @@ return {
 
     lsp.on_attach(function(client, bufnr)
       local bufopts = { noremap=true, silent=true, buffer=bufnr }
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
       vim.keymap.set("n", "gD", vim.lsp.buf.implementation, bufopts)
       vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
-      vim.keymap.set("n", "ga", vim.lsp.buf.code_action, bufopts)
+      vim.keymap.set("n", "<c-k>", vim.lsp.buf.signature_help, bufopts)
+      vim.keymap.set("n", "1gD", vim.lsp.buf.type_definition, bufopts)
+      vim.keymap.set("n", "g0", vim.lsp.buf.document_symbol, bufopts)
+      vim.keymap.set("n", "gW", vim.lsp.buf.workspace_symbol, bufopts)
+      vim.keymap.set("n", "gs", ":vsplit<CR>gd", bufopts)
     end)
+
+    require('lspconfig').zls.setup{}
 
     lsp.set_preferences({
       sign_icons = {}
     })
-    
-    lsp.setup()
 
+    lsp.setup()
   end
 }
